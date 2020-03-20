@@ -61,9 +61,6 @@
     <ClCompile Include="..\..\Framework\DmfPlatform.c">
       <Filter>Framework</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\Framework\Platform\DmfPlatform_Win32.c">
-      <Filter>Platform</Filter>
-    </ClCompile>
     <ClCompile Include="..\..\Framework\Modules.Core\Dmf_BranchTrack.c">
       <Filter>Modules\Features</Filter>
     </ClCompile>
@@ -72,6 +69,9 @@
     </ClCompile>
     <ClCompile Include="..\..\Framework\DmfBranchTrack.c">
       <Filter>Framework</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Framework\Platform\Win32\DmfPlatform_Win32.c">
+      <Filter>Platform\Win32</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -126,56 +126,71 @@
     <ClInclude Include="..\..\Framework\DmfPlatform.h">
       <Filter>Headers\Framework</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\Framework\Platform\wdfcollection.h">
-      <Filter>Headers\Framework\Platform</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\Framework\Platform\wdfcore.h">
-      <Filter>Headers\Framework\Platform</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\Framework\Platform\wdfdevice.h">
-      <Filter>Headers\Framework\Platform</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\Framework\Platform\wdffileobject.h">
-      <Filter>Headers\Framework\Platform</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\Framework\Platform\wdfio.h">
-      <Filter>Headers\Framework\Platform</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\Framework\Platform\wdfmemory.h">
-      <Filter>Headers\Framework\Platform</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\Framework\Platform\wdfobject.h">
-      <Filter>Headers\Framework\Platform</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\Framework\Platform\wdfrequest.h">
-      <Filter>Headers\Framework\Platform</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\Framework\Platform\wdfsync.h">
-      <Filter>Headers\Framework\Platform</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\Framework\Platform\wdftimer.h">
-      <Filter>Headers\Framework\Platform</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\Framework\Platform\wdftypes.h">
-      <Filter>Headers\Framework\Platform</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\Framework\Platform\wdfworkitem.h">
-      <Filter>Headers\Framework\Platform</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\Framework\Platform\wudfwdm.h">
-      <Filter>Headers\Framework\Platform</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\Framework\Platform\DmfPlatform_Win32.h">
-      <Filter>Headers\Framework\Platform</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\Framework\Platform\wdffuncenum.h">
-      <Filter>Headers\Framework\Platform</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\Framework\Platform\DmfIncludes_WIN32_MODE.h">
-      <Filter>Headers\Framework\Platform</Filter>
-    </ClInclude>
     <ClInclude Include="..\..\Framework\Modules.Core\Dmf_String.h">
       <Filter>Headers\Modules\Driver Patterns</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Framework\Platform\Win32\DmfIncludes_WIN32_MODE.h">
+      <Filter>Headers\Framework\Platform\Win32</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Framework\Platform\Win32\DmfPlatform_Win32.h">
+      <Filter>Headers\Framework\Platform\Win32</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Framework\Platform\FromWdf\DmfFromWdf.h">
+      <Filter>Headers\Framework\Platform\FromWdf</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Framework\Platform\FromWdf\wdfcollection.h">
+      <Filter>Headers\Framework\Platform\FromWdf</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Framework\Platform\FromWdf\wdfcore.h">
+      <Filter>Headers\Framework\Platform\FromWdf</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Framework\Platform\FromWdf\wdfdevice.h">
+      <Filter>Headers\Framework\Platform\FromWdf</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Framework\Platform\FromWdf\wdfdriver.h">
+      <Filter>Headers\Framework\Platform\FromWdf</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Framework\Platform\FromWdf\wdffileobject.h">
+      <Filter>Headers\Framework\Platform\FromWdf</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Framework\Platform\FromWdf\wdffuncenum.h">
+      <Filter>Headers\Framework\Platform\FromWdf</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Framework\Platform\FromWdf\wdfglobals.h">
+      <Filter>Headers\Framework\Platform\FromWdf</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Framework\Platform\FromWdf\wdfio.h">
+      <Filter>Headers\Framework\Platform\FromWdf</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Framework\Platform\FromWdf\wdfmemory.h">
+      <Filter>Headers\Framework\Platform\FromWdf</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Framework\Platform\FromWdf\wdfobject.h">
+      <Filter>Headers\Framework\Platform\FromWdf</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Framework\Platform\FromWdf\wdfregistry.h">
+      <Filter>Headers\Framework\Platform\FromWdf</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Framework\Platform\FromWdf\wdfrequest.h">
+      <Filter>Headers\Framework\Platform\FromWdf</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Framework\Platform\FromWdf\wdfstring.h">
+      <Filter>Headers\Framework\Platform\FromWdf</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Framework\Platform\FromWdf\wdfsync.h">
+      <Filter>Headers\Framework\Platform\FromWdf</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Framework\Platform\FromWdf\wdftimer.h">
+      <Filter>Headers\Framework\Platform\FromWdf</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Framework\Platform\FromWdf\wdftypes.h">
+      <Filter>Headers\Framework\Platform\FromWdf</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Framework\Platform\FromWdf\wdfworkitem.h">
+      <Filter>Headers\Framework\Platform\FromWdf</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Framework\Platform\FromWdf\wudfwdm.h">
+      <Filter>Headers\Framework\Platform\FromWdf</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -241,6 +256,15 @@
     </Filter>
     <Filter Include="Platform">
       <UniqueIdentifier>{3cbd92d6-132e-4b61-84e1-deb59812f7bb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Platform\Win32">
+      <UniqueIdentifier>{3518f832-8dae-4663-9a02-34a8d52c12d6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Headers\Framework\Platform\Win32">
+      <UniqueIdentifier>{cdf67a3d-471d-43c7-8320-62b1344e814a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Headers\Framework\Platform\FromWdf">
+      <UniqueIdentifier>{fbfb5b06-67dc-4516-93c7-4310575fc842}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>

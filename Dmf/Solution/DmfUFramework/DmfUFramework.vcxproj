@@ -191,7 +191,7 @@
   <ItemGroup>
     <ClInclude Include="..\..\Framework\DmfIncludeInternal.h" />
     <ClInclude Include="..\..\Framework\DmfDefinitions.h" />
-    <ClInclude Include="..\..\Framework\Platform\DmfIncludes_USER_MODE.h" />
+    <ClInclude Include="..\..\Framework\DmfIncludes_USER_MODE.h" />
     <ClInclude Include="..\..\Framework\DmfTrace.h" />
     <ClInclude Include="..\..\Framework\DmfModule.h" />
     <ClInclude Include="..\..\Framework\Modules.Core\DmfInterface.h" />

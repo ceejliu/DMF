@@ -70,7 +70,7 @@
       <WppEnabled>false</WppEnabled>
       <RuntimeLibrary Condition="'$(Configuration)'=='Release'">MultiThreaded</RuntimeLibrary>
       <RuntimeLibrary Condition="'$(Configuration)'=='Debug'">MultiThreadedDebug</RuntimeLibrary>
-      <Optimization   Condition="'$(Configuration)'=='Debug'">Disabled</Optimization>
+      <Optimization Condition="'$(Configuration)'=='Debug'">Disabled</Optimization>
     </ClCompile>
     <Link>
       <AdditionalDependencies>%(AdditionalDependencies);hid.lib;setupapi.lib;cfgmgr32.lib;</AdditionalDependencies>
@@ -100,7 +100,7 @@
     <ClCompile Include="..\..\Framework\Modules.Core\Dmf_BufferQueue.c" />
     <ClCompile Include="..\..\Framework\Modules.Core\Dmf_RingBuffer.c" />
     <ClCompile Include="..\..\Framework\Modules.Core\Dmf_String.c" />
-    <ClCompile Include="..\..\Framework\Platform\DmfPlatform_Win32.c" />
+    <ClCompile Include="..\..\Framework\Platform\Win32\DmfPlatform_Win32.c" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\Framework\DmfIncludeInternal.h" />
@@ -121,22 +121,27 @@
     <ClInclude Include="..\..\Framework\Modules.Core\DmfModules.Core.Trace.h" />
     <ClInclude Include="..\..\Framework\Modules.Core\Dmf_RingBuffer.h" />
     <ClInclude Include="..\..\Framework\Modules.Core\Dmf_String.h" />
-    <ClInclude Include="..\..\Framework\Platform\DmfIncludes_WIN32_MODE.h" />
-    <ClInclude Include="..\..\Framework\Platform\DmfPlatform_Win32.h" />
-    <ClInclude Include="..\..\Framework\Platform\wdfcollection.h" />
-    <ClInclude Include="..\..\Framework\Platform\wdfcore.h" />
-    <ClInclude Include="..\..\Framework\Platform\wdfdevice.h" />
-    <ClInclude Include="..\..\Framework\Platform\wdffileobject.h" />
-    <ClInclude Include="..\..\Framework\Platform\wdffuncenum.h" />
-    <ClInclude Include="..\..\Framework\Platform\wdfio.h" />
-    <ClInclude Include="..\..\Framework\Platform\wdfmemory.h" />
-    <ClInclude Include="..\..\Framework\Platform\wdfobject.h" />
-    <ClInclude Include="..\..\Framework\Platform\wdfrequest.h" />
-    <ClInclude Include="..\..\Framework\Platform\wdfsync.h" />
-    <ClInclude Include="..\..\Framework\Platform\wdftimer.h" />
-    <ClInclude Include="..\..\Framework\Platform\wdftypes.h" />
-    <ClInclude Include="..\..\Framework\Platform\wdfworkitem.h" />
-    <ClInclude Include="..\..\Framework\Platform\wudfwdm.h" />
+    <ClInclude Include="..\..\Framework\Platform\FromWdf\DmfFromWdf.h" />
+    <ClInclude Include="..\..\Framework\Platform\FromWdf\wdfcollection.h" />
+    <ClInclude Include="..\..\Framework\Platform\FromWdf\wdfcore.h" />
+    <ClInclude Include="..\..\Framework\Platform\FromWdf\wdfdevice.h" />
+    <ClInclude Include="..\..\Framework\Platform\FromWdf\wdfdriver.h" />
+    <ClInclude Include="..\..\Framework\Platform\FromWdf\wdffileobject.h" />
+    <ClInclude Include="..\..\Framework\Platform\FromWdf\wdffuncenum.h" />
+    <ClInclude Include="..\..\Framework\Platform\FromWdf\wdfglobals.h" />
+    <ClInclude Include="..\..\Framework\Platform\FromWdf\wdfio.h" />
+    <ClInclude Include="..\..\Framework\Platform\FromWdf\wdfmemory.h" />
+    <ClInclude Include="..\..\Framework\Platform\FromWdf\wdfobject.h" />
+    <ClInclude Include="..\..\Framework\Platform\FromWdf\wdfregistry.h" />
+    <ClInclude Include="..\..\Framework\Platform\FromWdf\wdfrequest.h" />
+    <ClInclude Include="..\..\Framework\Platform\FromWdf\wdfstring.h" />
+    <ClInclude Include="..\..\Framework\Platform\FromWdf\wdfsync.h" />
+    <ClInclude Include="..\..\Framework\Platform\FromWdf\wdftimer.h" />
+    <ClInclude Include="..\..\Framework\Platform\FromWdf\wdftypes.h" />
+    <ClInclude Include="..\..\Framework\Platform\FromWdf\wdfworkitem.h" />
+    <ClInclude Include="..\..\Framework\Platform\FromWdf\wudfwdm.h" />
+    <ClInclude Include="..\..\Framework\Platform\Win32\DmfIncludes_WIN32_MODE.h" />
+    <ClInclude Include="..\..\Framework\Platform\Win32\DmfPlatform_Win32.h" />
   </ItemGroup>
   <ItemGroup>
     <FilesToPackage Include="$(TargetPath)" />

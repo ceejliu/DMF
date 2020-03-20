@@ -36,7 +36,7 @@ Environment:
 
 #endif // !defined(DMF_USER_MODE)
 
-#if defined(DMF_WDF_DRIVER)
+#if defined(DMF_INCLUDE_TMH)
 #include "Dmf_CrashDump.tmh"
 #endif
 

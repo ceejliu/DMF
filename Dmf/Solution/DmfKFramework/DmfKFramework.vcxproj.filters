@@ -126,8 +126,8 @@
     <ClInclude Include="..\..\Framework\Modules.Core\Dmf_String.h">
       <Filter>Headers\Modules\Driver Patterns</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\Framework\Platform\DmfIncludes_KERNEL_MODE.h">
-      <Filter>Headers\Framework\Platform</Filter>
+    <ClInclude Include="..\..\Framework\DmfIncludes_KERNEL_MODE.h">
+      <Filter>Headers\Framework</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -188,9 +188,6 @@
     <Filter Include="Documentation\Modules\Buffers">
       <UniqueIdentifier>{0efec2e3-c4b1-4425-b3b7-415b730fedea}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Headers\Framework\Platform">
-      <UniqueIdentifier>{d359b5df-bd3a-40f8-84a4-34270a975e22}</UniqueIdentifier>
-    </Filter>
   </ItemGroup>
   <ItemGroup>
     <Text Include="..\..\Framework\Modules.Core\Dmf_BufferPool.md">
@@ -211,10 +208,8 @@
     <Text Include="..\..\Framework\Modules.Core\Dmf_LiveKernelDump.md">
       <Filter>Documentation\Modules\Features</Filter>
     </Text>
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="..\..\Framework\Modules.Core\Dmf_String.md">
-      <Filter>Documentation\Modules\Driver Patterns</Filter>
-    </None>
+    <Text Include="..\..\Framework\Modules.Core\Dmf_String.md">
+      <Filter>Documentation\Modules\Data Structures</Filter>
+    </Text>
   </ItemGroup>
 </Project>

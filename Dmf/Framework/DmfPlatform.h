@@ -27,20 +27,22 @@ extern "C"
 {
 #endif // defined(__cplusplus)
 
-#if defined(DMF_USER_MODE)
-    #include "..\Platform\DmfIncludes_USER_MODE.h"
-    #define DMF_WDF_DRIVER
-#elif defined(DMF_WIN32_MODE)
+#if (defined(DMF_USER_MODE) && defined(DMF_WIN32_MODE)) || defined(DMF_WIN32_MODE)
     // Win32 Mode uses many of the User-mode APIs.
     //
     #define DMF_USER_MODE
-    #include "..\Platform\DmfIncludes_WIN32_MODE.h"
+    #include "..\Platform\Win32\DmfIncludes_WIN32_MODE.h"
+#elif defined(DMF_USER_MODE)
+    #define DMF_WDF_DRIVER
+    #define DMF_INCLUDE_TMH
+    #include "DmfIncludes_USER_MODE.h"
 #else
     // Kernel-mode by default.
     //
     #define DMF_KERNEL_MODE
     #define DMF_WDF_DRIVER
-    #include "..\Platform\DmfIncludes_KERNEL_MODE.h"
+    #define DMF_INCLUDE_TMH
+    #include "DmfIncludes_KERNEL_MODE.h"
 #endif
 
 //////////////////////////////////////////////////////////////////////////////////////
@@ -111,51 +113,9 @@ extern "C"
 
     #define PAGED_CODE()
 
-    #define WDF_EVERYTHING_ALWAYS_AVAILABLE
-    #include ".\Platform\wudfwdm.h"
-    #include ".\Platform\wdftypes.h"
-    #include ".\Platform\wdfglobals.h"
-    #include ".\Platform\wdffuncenum.h"
-
-    typedef VOID (*WDFFUNC) (VOID);
-    extern WDFFUNC WdfFunctions[WdfFunctionTableNumEntries];
-
-    #include ".\Platform\wdfobject.h"
-    #include ".\Platform\wdfcore.h"
-    #include ".\Platform\wdfdriver.h"
-
-    // It is not used in non-Windows platforms but the header files still 
-    // need to compile.
+    // Include files from WDF.
     //
-    typedef struct _PNP_BUS_INFORMATION
-    {
-        GUID BusTypeGuid;
-        INTERFACE_TYPE LegacyBusType;
-        ULONG BusNumber;
-    } PNP_BUS_INFORMATION, *PPNP_BUS_INFORMATION;
-    #define WDF_DEVICE_NO_WDMSEC_H
-    #include ".\Platform\wdfdevice.h"
-
-    #include ".\Platform\wdfmemory.h"
-    #include ".\Platform\wdfsync.h"
-    #include ".\Platform\wdftimer.h"
-    #include ".\Platform\wdfworkitem.h"
-    #include ".\Platform\wdfcollection.h"
-    #include ".\Platform\wdfstring.h"
-    #include ".\Platform\wdfregistry.h"
-
-    // Dummy IO_STACK_LOCATION parameter so that the include files compile.
-    // It is not used in non-Windows platforms but the header files still 
-    // need to compile.
-    //
-    typedef struct 
-    {
-        ULONG Dummy;
-    } IO_STACK_LOCATION, *PIO_STACK_LOCATION;
-    #include ".\Platform\wdfrequest.h"
-
-    #include ".\Platform\wdfio.h"
-    #include ".\Platform\wdffileobject.h"
+    #include ".\Platform\FromWdf\DmfFromWdf.h"
 
     typedef enum
     {
@@ -453,7 +413,7 @@ extern "C"
 #if defined(DMF_WIN32_MODE)
     // Win32 specific WDF support needed.
     //
-    #include "Platform\DmfPlatform_Win32.h"
+    #include ".\Platform\Win32\DmfPlatform_Win32.h"
 
     #include <hidusage.h>
     #include <hidpi.h>

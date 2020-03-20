@@ -23,7 +23,7 @@ Environment:
 #include "DmfModules.Library.Tests.h"
 #include "DmfModules.Library.Tests.Trace.h"
 
-#if defined(DMF_WDF_DRIVER)
+#if defined(DMF_INCLUDE_TMH)
 #include "Dmf_Tests_RingBuffer.tmh"
 #endif
 

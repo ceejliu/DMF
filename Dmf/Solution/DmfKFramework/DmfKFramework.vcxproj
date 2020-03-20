@@ -54,6 +54,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\Framework\DmfDefinitions.h" />
+    <ClInclude Include="..\..\Framework\DmfIncludes_KERNEL_MODE.h" />
     <ClInclude Include="..\..\Framework\DmfModule.h" />
     <ClInclude Include="..\..\Framework\DmfIncludeInternal.h" />
     <ClInclude Include="..\..\Framework\DmfTrace.h" />
@@ -70,7 +71,6 @@
     <ClInclude Include="..\..\Framework\Modules.Core\Dmf_BufferQueue.h" />
     <ClInclude Include="..\..\Framework\Modules.Core\DmfModules.Core.Trace.h" />
     <ClInclude Include="..\..\Framework\Modules.Core\Dmf_String.h" />
-    <ClInclude Include="..\..\Framework\Platform\DmfIncludes_KERNEL_MODE.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{A603433B-6AE6-419D-AD1A-103809B82745}</ProjectGuid>
@@ -320,9 +320,7 @@
     <Text Include="..\..\Framework\Modules.Core\Dmf_IoctlHandler.md" />
     <Text Include="..\..\Framework\Modules.Core\Dmf_LiveKernelDump.md" />
     <Text Include="..\..\Framework\Modules.Core\Dmf_BufferQueue.md" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="..\..\Framework\Modules.Core\Dmf_String.md" />
+    <Text Include="..\..\Framework\Modules.Core\Dmf_String.md" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
 </Project>
