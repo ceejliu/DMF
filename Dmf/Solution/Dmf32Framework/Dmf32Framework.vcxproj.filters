@@ -58,9 +58,6 @@
     <ClCompile Include="..\..\Framework\DmfInterfaceInternal.c">
       <Filter>Framework</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\Framework\DmfPlatform.c">
-      <Filter>Framework</Filter>
-    </ClCompile>
     <ClCompile Include="..\..\Framework\Modules.Core\Dmf_BranchTrack.c">
       <Filter>Modules\Features</Filter>
     </ClCompile>
@@ -72,6 +69,9 @@
     </ClCompile>
     <ClCompile Include="..\..\Framework\Platform\DMF_WIN32_MODE\DmfPlatform_Win32.c">
       <Filter>Platform\DMF_WIN32_MODE</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Framework\Platform\DmfPlatform.c">
+      <Filter>Platform</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -121,9 +121,6 @@
       <Filter>Headers\Modules\Buffers</Filter>
     </ClInclude>
     <ClInclude Include="..\..\Framework\Modules.Core\DmfInterface.h">
-      <Filter>Headers\Framework</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\Framework\DmfPlatform.h">
       <Filter>Headers\Framework</Filter>
     </ClInclude>
     <ClInclude Include="..\..\Framework\Modules.Core\Dmf_String.h">
@@ -191,6 +188,12 @@
     </ClInclude>
     <ClInclude Include="..\..\Framework\Platform\FromWdf\wudfwdm.h">
       <Filter>Headers\Framework\Platform\FromWdf</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Framework\DmfIncludes.h">
+      <Filter>Headers\Framework</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Framework\Platform\DmfPlatform.h">
+      <Filter>Headers\Framework\Platform</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

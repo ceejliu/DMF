@@ -87,7 +87,6 @@
     <ClCompile Include="..\..\Framework\DmfInterfaceInternal.c" />
     <ClCompile Include="..\..\Framework\DmfInternal.c" />
     <ClCompile Include="..\..\Framework\DmfModuleCollection.c" />
-    <ClCompile Include="..\..\Framework\DmfPlatform.c" />
     <ClCompile Include="..\..\Framework\DmfPortable.c" />
     <ClCompile Include="..\..\Framework\DmfUtility.c" />
     <ClCompile Include="..\..\Framework\DmfValidate.c" />
@@ -100,11 +99,12 @@
     <ClCompile Include="..\..\Framework\Modules.Core\Dmf_BufferQueue.c" />
     <ClCompile Include="..\..\Framework\Modules.Core\Dmf_RingBuffer.c" />
     <ClCompile Include="..\..\Framework\Modules.Core\Dmf_String.c" />
+    <ClCompile Include="..\..\Framework\Platform\DmfPlatform.c" />
     <ClCompile Include="..\..\Framework\Platform\DMF_WIN32_MODE\DmfPlatform_Win32.c" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\Framework\DmfIncludeInternal.h" />
-    <ClInclude Include="..\..\Framework\DmfPlatform.h" />
+    <ClInclude Include="..\..\Framework\DmfIncludes.h" />
     <ClInclude Include="..\..\Framework\DmfTrace.h" />
     <ClInclude Include="..\..\Framework\DmfModule.h" />
     <ClInclude Include="..\..\Framework\Modules.Core\DmfInterface.h" />
@@ -121,6 +121,7 @@
     <ClInclude Include="..\..\Framework\Modules.Core\DmfModules.Core.Trace.h" />
     <ClInclude Include="..\..\Framework\Modules.Core\Dmf_RingBuffer.h" />
     <ClInclude Include="..\..\Framework\Modules.Core\Dmf_String.h" />
+    <ClInclude Include="..\..\Framework\Platform\DmfPlatform.h" />
     <ClInclude Include="..\..\Framework\Platform\FromWdf\DmfFromWdf.h" />
     <ClInclude Include="..\..\Framework\Platform\FromWdf\wdfcollection.h" />
     <ClInclude Include="..\..\Framework\Platform\FromWdf\wdfcore.h" />

@@ -24,7 +24,7 @@ Environment:
 
 // Include files and definitions that are platform specific.
 //
-#include "DmfPlatform.h"
+#include "DmfIncludes.h"
 
 #if defined(__cplusplus)
 extern "C"
