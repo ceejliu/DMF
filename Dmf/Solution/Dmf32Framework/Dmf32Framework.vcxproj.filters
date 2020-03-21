@@ -70,8 +70,8 @@
     <ClCompile Include="..\..\Framework\DmfBranchTrack.c">
       <Filter>Framework</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\Framework\Platform\Win32\DmfPlatform_Win32.c">
-      <Filter>Platform\Win32</Filter>
+    <ClCompile Include="..\..\Framework\Platform\DMF_WIN32_MODE\DmfPlatform_Win32.c">
+      <Filter>Platform\DMF_WIN32_MODE</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -129,11 +129,11 @@
     <ClInclude Include="..\..\Framework\Modules.Core\Dmf_String.h">
       <Filter>Headers\Modules\Driver Patterns</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\Framework\Platform\Win32\DmfIncludes_WIN32_MODE.h">
-      <Filter>Headers\Framework\Platform\Win32</Filter>
+    <ClInclude Include="..\..\Framework\Platform\DMF_WIN32_MODE\DmfIncludes_WIN32_MODE.h">
+      <Filter>Headers\Framework\Platform\DMF_WIN32_MODE</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\Framework\Platform\Win32\DmfPlatform_Win32.h">
-      <Filter>Headers\Framework\Platform\Win32</Filter>
+    <ClInclude Include="..\..\Framework\Platform\DMF_WIN32_MODE\DmfPlatform_Win32.h">
+      <Filter>Headers\Framework\Platform\DMF_WIN32_MODE</Filter>
     </ClInclude>
     <ClInclude Include="..\..\Framework\Platform\FromWdf\DmfFromWdf.h">
       <Filter>Headers\Framework\Platform\FromWdf</Filter>
@@ -257,10 +257,10 @@
     <Filter Include="Platform">
       <UniqueIdentifier>{3cbd92d6-132e-4b61-84e1-deb59812f7bb}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Platform\Win32">
+    <Filter Include="Platform\DMF_WIN32_MODE">
       <UniqueIdentifier>{3518f832-8dae-4663-9a02-34a8d52c12d6}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Headers\Framework\Platform\Win32">
+    <Filter Include="Headers\Framework\Platform\DMF_WIN32_MODE">
       <UniqueIdentifier>{cdf67a3d-471d-43c7-8320-62b1344e814a}</UniqueIdentifier>
     </Filter>
     <Filter Include="Headers\Framework\Platform\FromWdf">

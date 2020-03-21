@@ -100,7 +100,7 @@
     <ClCompile Include="..\..\Framework\Modules.Core\Dmf_BufferQueue.c" />
     <ClCompile Include="..\..\Framework\Modules.Core\Dmf_RingBuffer.c" />
     <ClCompile Include="..\..\Framework\Modules.Core\Dmf_String.c" />
-    <ClCompile Include="..\..\Framework\Platform\Win32\DmfPlatform_Win32.c" />
+    <ClCompile Include="..\..\Framework\Platform\DMF_WIN32_MODE\DmfPlatform_Win32.c" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\Framework\DmfIncludeInternal.h" />
@@ -140,8 +140,8 @@
     <ClInclude Include="..\..\Framework\Platform\FromWdf\wdftypes.h" />
     <ClInclude Include="..\..\Framework\Platform\FromWdf\wdfworkitem.h" />
     <ClInclude Include="..\..\Framework\Platform\FromWdf\wudfwdm.h" />
-    <ClInclude Include="..\..\Framework\Platform\Win32\DmfIncludes_WIN32_MODE.h" />
-    <ClInclude Include="..\..\Framework\Platform\Win32\DmfPlatform_Win32.h" />
+    <ClInclude Include="..\..\Framework\Platform\DMF_WIN32_MODE\DmfIncludes_WIN32_MODE.h" />
+    <ClInclude Include="..\..\Framework\Platform\DMF_WIN32_MODE\DmfPlatform_Win32.h" />
   </ItemGroup>
   <ItemGroup>
     <FilesToPackage Include="$(TargetPath)" />

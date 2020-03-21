@@ -31,7 +31,7 @@ extern "C"
     // Win32 Mode uses many of the User-mode APIs.
     //
     #define DMF_USER_MODE
-    #include "..\Platform\Win32\DmfIncludes_WIN32_MODE.h"
+    #include "..\Platform\DMF_WIN32_MODE\DmfIncludes_WIN32_MODE.h"
 #elif defined(DMF_USER_MODE)
     #define DMF_WDF_DRIVER
     #define DMF_INCLUDE_TMH
@@ -413,7 +413,7 @@ extern "C"
 #if defined(DMF_WIN32_MODE)
     // Win32 specific WDF support needed.
     //
-    #include ".\Platform\Win32\DmfPlatform_Win32.h"
+    #include ".\Platform\DMF_WIN32_MODE\DmfPlatform_Win32.h"
 
     #include <hidusage.h>
     #include <hidpi.h>
