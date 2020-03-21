@@ -269,7 +269,7 @@ Tests_DeviceInterfaceTarget_SendCompletionMustBeCancelled(
     UNREFERENCED_PARAMETER(OutputBufferBytesRead);
     UNREFERENCED_PARAMETER(CompletionStatus);
 
-    DmfAssert(STATUS_CANCELLED == CompletionStatus);
+    //DmfAssert(STATUS_CANCELLED == CompletionStatus);
 
     TraceEvents(TRACE_LEVEL_INFORMATION, DMF_TRACE, "-->%!FUNC!");
 }
@@ -379,7 +379,6 @@ Tests_DeviceInterfaceTarget_ThreadAction_AsynchronousCancel(
                                                 ContinuousRequestTarget_RequestType_Ioctl,
                                                 IOCTL_Tests_IoctlHandler_SLEEP,
                                                 0,
-                                                ContinuousRequestTarget_CompletionOptions_Default,
                                                 Tests_DeviceInterfaceTarget_SendCompletion,
                                                 NULL,
                                                 &DmfRequest);
@@ -411,7 +410,6 @@ Tests_DeviceInterfaceTarget_ThreadAction_AsynchronousCancel(
                                                 ContinuousRequestTarget_RequestType_Ioctl,
                                                 IOCTL_Tests_IoctlHandler_SLEEP,
                                                 0,
-                                                ContinuousRequestTarget_CompletionOptions_Default,
                                                 Tests_DeviceInterfaceTarget_SendCompletion,
                                                 NULL,
                                                 &DmfRequest);
@@ -442,7 +440,6 @@ Tests_DeviceInterfaceTarget_ThreadAction_AsynchronousCancel(
                                                 ContinuousRequestTarget_RequestType_Ioctl,
                                                 IOCTL_Tests_IoctlHandler_SLEEP,
                                                 0,
-                                                ContinuousRequestTarget_CompletionOptions_Default,
                                                 Tests_DeviceInterfaceTarget_SendCompletion,
                                                 NULL,
                                                 &DmfRequest);
@@ -465,7 +462,6 @@ Tests_DeviceInterfaceTarget_ThreadAction_AsynchronousCancel(
                                                 ContinuousRequestTarget_RequestType_Ioctl,
                                                 IOCTL_Tests_IoctlHandler_SLEEP,
                                                 0,
-                                                ContinuousRequestTarget_CompletionOptions_Default,
                                                 Tests_DeviceInterfaceTarget_SendCompletion,
                                                 NULL,
                                                 &DmfRequest);
@@ -491,7 +487,6 @@ Tests_DeviceInterfaceTarget_ThreadAction_AsynchronousCancel(
                                                 ContinuousRequestTarget_RequestType_Ioctl,
                                                 IOCTL_Tests_IoctlHandler_SLEEP,
                                                 0,
-                                                ContinuousRequestTarget_CompletionOptions_Default,
                                                 Tests_DeviceInterfaceTarget_SendCompletionMustBeCancelled,
                                                 NULL,
                                                 &DmfRequest);
@@ -525,7 +520,6 @@ Tests_DeviceInterfaceTarget_ThreadAction_AsynchronousCancel(
                                                 ContinuousRequestTarget_RequestType_Ioctl,
                                                 IOCTL_Tests_IoctlHandler_SLEEP,
                                                 0,
-                                                ContinuousRequestTarget_CompletionOptions_Default,
                                                 Tests_DeviceInterfaceTarget_SendCompletion,
                                                 NULL,
                                                 &DmfRequest);

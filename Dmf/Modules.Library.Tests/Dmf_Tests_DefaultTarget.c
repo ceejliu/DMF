@@ -389,7 +389,6 @@ Tests_DefaultTarget_ThreadAction_AsynchronousCancel(
                                         ContinuousRequestTarget_RequestType_Ioctl,
                                         IOCTL_Tests_IoctlHandler_SLEEP,
                                         0,
-                                        ContinuousRequestTarget_CompletionOptions_Default,
                                         Tests_DefaultTarget_SendCompletion,
                                         NULL,
                                         &DmfRequest);
@@ -421,7 +420,6 @@ Tests_DefaultTarget_ThreadAction_AsynchronousCancel(
                                         ContinuousRequestTarget_RequestType_Ioctl,
                                         IOCTL_Tests_IoctlHandler_SLEEP,
                                         0,
-                                        ContinuousRequestTarget_CompletionOptions_Default,
                                         Tests_DefaultTarget_SendCompletion,
                                         NULL,
                                         &DmfRequest);
@@ -452,7 +450,6 @@ Tests_DefaultTarget_ThreadAction_AsynchronousCancel(
                                         ContinuousRequestTarget_RequestType_Ioctl,
                                         IOCTL_Tests_IoctlHandler_SLEEP,
                                         0,
-                                        ContinuousRequestTarget_CompletionOptions_Default,
                                         Tests_DefaultTarget_SendCompletion,
                                         NULL,
                                         &DmfRequest);
@@ -475,7 +472,6 @@ Tests_DefaultTarget_ThreadAction_AsynchronousCancel(
                                         ContinuousRequestTarget_RequestType_Ioctl,
                                         IOCTL_Tests_IoctlHandler_SLEEP,
                                         0,
-                                        ContinuousRequestTarget_CompletionOptions_Default,
                                         Tests_DefaultTarget_SendCompletion,
                                         NULL,
                                         &DmfRequest);
@@ -501,7 +497,6 @@ Tests_DefaultTarget_ThreadAction_AsynchronousCancel(
                                         ContinuousRequestTarget_RequestType_Ioctl,
                                         IOCTL_Tests_IoctlHandler_SLEEP,
                                         0,
-                                        ContinuousRequestTarget_CompletionOptions_Default,
                                         Tests_DefaultTarget_SendCompletionMustBeCancelled,
                                         NULL,
                                         &DmfRequest);
@@ -535,7 +530,6 @@ Tests_DefaultTarget_ThreadAction_AsynchronousCancel(
                                         ContinuousRequestTarget_RequestType_Ioctl,
                                         IOCTL_Tests_IoctlHandler_SLEEP,
                                         0,
-                                        ContinuousRequestTarget_CompletionOptions_Default,
                                         Tests_DefaultTarget_SendCompletion,
                                         NULL,
                                         &DmfRequest);
