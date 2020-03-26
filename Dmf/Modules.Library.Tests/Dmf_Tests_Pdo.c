@@ -270,7 +270,7 @@ Tests_Pdo_ThreadAction_Fast(
     PAGED_CODE();
 
     Tests_Pdo_ThreadAction(DmfModule,
-                           1000 * 1,
+                           1000 * 30,
                            ThreadIndex);
 }
 #pragma code_seg()

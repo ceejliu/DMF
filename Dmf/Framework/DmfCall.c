@@ -2997,7 +2997,18 @@ Return Value:
     HANDLE currentThreadId;
 
 #if defined(DMF_USER_MODE)
+    #if defined(DMF_WIN32_MODE)
+        // 'type cast': conversion from 'DWORD' to 'HANDLE' of greater size
+        //
+        #pragma warning(push)
+        #pragma warning(disable:4312)
+    #endif
     currentThreadId = (HANDLE)GetCurrentThreadId();
+    #if defined(DMF_WIN32_MODE)
+        // 'type cast': conversion from 'DWORD' to 'HANDLE' of greater size
+        //
+        #pragma warning(pop)
+    #endif
 #else
     currentThreadId = PsGetCurrentThread();
 #endif

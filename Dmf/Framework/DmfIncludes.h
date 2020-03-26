@@ -16,6 +16,8 @@ Environment:
 
 --*/
 
+// NOTE: All non-native WDF platforms require DmfPlatform.h.
+//
 #if defined(DMF_WIN32_MODE) 
 
     #include "..\Platform\DmfPlatform.h"
@@ -30,9 +32,12 @@ Environment:
         //
         #include "DmfIncludes_USER_MODE.h"
     #else
-        // KMDF driver.
+        // KMDF driver. (Allow Client Driver to define DMF_KERNEL_MODE for consistency
+        // although it was always the default selection.)
         //
-        #define DMF_KERNEL_MODE
+        #if !defined(DMF_KERNEL_MODE)
+            #define DMF_KERNEL_MODE
+        #endif
         #include "DmfIncludes_KERNEL_MODE.h"
      #endif
 

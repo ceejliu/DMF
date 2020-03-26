@@ -23,10 +23,16 @@ Environment:
 //
 #include <initguid.h>
 
+#pragma warning(push)
+#pragma warning(disable:4324)
 #include "DmfModules.Library.Tests.h"
+#include "DmfModules.Library.Tests.Trace.h"
+#pragma warning(pop)
 
+#if defined(DMF_INCLUDE_TMH)
 #include "Trace.h"
 #include "DmfInterface.tmh"
+#endif
 
 #include <conio.h>
 #include <time.h>
